@@ -1,9 +1,5 @@
 # Environment-Anchored Monitoring (EAM): pilot
 
-Code and results for the blog post
-**[You Can Split an Attack Across Chats, but Not Across Databases](BLOG_URL)**
-(CS G569 Agentic AI, BITS Pilani).
-
 An attacker can split a harmful job into harmless-looking requests and send them
 from different chats, accounts or AI services, so no single conversation shows
 the attack. Every step still has to change the same company systems. EAM ignores
@@ -67,19 +63,6 @@ Run live after every step (`results/e3_timing_groq.csv`), EAM flagged 27 of 30
 attacks at or before the step that does the damage and never caught the other
 3. It also raised a false alarm on 13 of 30 legitimate jobs at some step.
 
-## Limitations
 
-- All 60 cases are synthetic and were written by us, knowing which ones were
-  attacks. No real agent or real system was involved.
-- One judge model.
-- With 30 cases on each side, a gap of a few cases can be chance.
-- The rules baseline (M4) has a known bug: its data-theft rule checks
-  `approved=False`, but the upload events use `on_allowlist`, so that rule never
-  fires. It is left as is so the numbers match the post.
 
-## Team
 
-Ojaswi Prakash, Anand Bajaj Gupta and Dhruv Goel, with Faculty Name (faculty)
-and Mentor Name (mentor). CS G569 Agentic AI, BITS Pilani.
-
-Code written with help from Claude (Anthropic) and checked by the authors.
