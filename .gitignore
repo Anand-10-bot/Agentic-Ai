@@ -1,0 +1,7 @@
+# saved judge replies (large; re-created on each run)
+results/cache_*.json
+__pycache__/
+.env
+# DeCompBench data is gated: never push it
+data/
+*.zip

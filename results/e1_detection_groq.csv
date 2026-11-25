@@ -1,0 +1,6 @@
+monitor,detection_rate,false_positive_rate,auroc,tokens_per_trace
+M1,0.567,0.167,0.789,653.1
+M2,0.633,0.0,0.821,247.8
+M3,0.867,0.333,0.849,279.9
+M3raw,0.767,0.267,0.816,277.8
+M4,0.6,0.133,,0.0

@@ -1,0 +1,4 @@
+google-genai
+openai      # used for --judge groq
+scikit-learn
+anthropic   # optional, only for --judge anthropic
